@@ -21,7 +21,7 @@ Issue Date: 20/12/2007
 #include <string.h>     /* for memcpy() etc.        */
 
 #include "sha1.h"
-#include "brg_endian.h"
+//#include "brg_endian.h"
 
 #if defined(__cplusplus)
 extern "C"
@@ -42,7 +42,7 @@ extern "C"
 #endif
 
 #if !defined(bswap_32)
-#define bswap_32(x) ((rotr32((x), 24) & 0x00ff00ff) | (rotr32((x), 8) & 0xff00ff00))
+pppp#define bswap_32(x) ((rotr32((x), 24) & 0x00ff00ff) | (rotr32((x), 8) & 0xff00ff00))
 #endif
 
 #if (PLATFORM_BYTE_ORDER == IS_LITTLE_ENDIAN)
